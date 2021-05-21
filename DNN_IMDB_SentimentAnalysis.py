@@ -18,6 +18,7 @@ reverse_word_index=dict([(value,key) for (key,value) in word_index.items()])
 train_data=keras.preprocessing.sequence.pad_sequences(train_data,value=word_index['<PAD>'],padding='post',maxlen=250)
 test_data=keras.preprocessing.sequence.pad_sequences(test_data,value=word_index['<PAD>'],padding='post',maxlen=250)
 # print(len(train_data),len(test_data))
+# print(len(train_data[o],len(test_data[0])))
 
 def decode_review(text):
 	return ''.join([reverse_word_index.get(i,'?') for i in text])

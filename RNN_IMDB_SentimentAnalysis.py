@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import sequence
 import os
 import numpy as np
 
-VOCAB_SIZE=88584
+VOCAB_SIZE=88000
 MAXLEN=250
 BATCH_SIZE=64
 
